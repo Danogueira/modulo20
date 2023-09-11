@@ -8,16 +8,25 @@
 </head>
 <body>
     <h1>Enviar Email Módulo 20</h1>
+    
+    <img class="centered-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWSWKRsvp8dRy3w6-wja2j8HawAwfQd8E_qw&usqp=CAU" alt="img-email">
+
 
     <form id="emailForm">
-        <label for="recipient">Destinatário:</label>
-        <input type="email" id="recipient" name="recipient" required><br><br>
-
-        <label for="subject">Assunto:</label>
-        <input type="text" id="subject" name="subject" required><br><br>
-
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        <table>
+            <tr>
+                <td><label for="recipient">Destinatário:</label></td>
+                <td><input type="email" id="recipient" name="recipient" required></td>
+            </tr>
+            <tr>
+                <td><label for="subject">Assunto:</label></td>
+                <td><input type="text" id="subject" name="subject" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Mensagem:</label></td>
+                <td><textarea id="message" name="message" rows="4" required></textarea></td>
+            </tr>
+        </table>
 
         <button type="button" onclick="enviarEmail()">Enviar Email</button>
     </form>
